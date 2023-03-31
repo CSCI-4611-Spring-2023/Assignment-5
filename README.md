@@ -165,7 +165,9 @@ The online examples that would be the most straightforward to implement are prob
 
 - [Lava](https://threejs.org/examples/webgl_shader_lava.html)
 - [Water](https://threejs.org/examples/webgl_shaders_ocean.html)
-- [Exploding 3D Objects](https://tympanus.net/codrops/2019/03/26/exploding-3d-objects-with-three-js/)
+- [Flame](https://threejs-flame-shader.vercel.app/)
+- [Grain](https://tympanus.net/codrops/2022/03/07/creating-a-risograph-grain-light-effect-in-three-js/)
+- [Tone Mapping](https://threejs.org/examples/webgl_shaders_tonemapping.html)
 
 ## Academic Integrity Reminder
 
