@@ -205,13 +205,6 @@ export class NormalMapMaterial extends gfx.Material3
         this.gl.drawElements(this.gl.TRIANGLES, mesh.triangleCount*3, this.gl.UNSIGNED_SHORT, 0);
     }
 
-    setColor(color: gfx.Color): void
-    {
-        this.ambientColor.copy(color);
-        this.diffuseColor.copy(color);
-        this.specularColor.copy(color);
-    }
-
     // based on method described at: https://learnopengl.com/Advanced-Lighting/Normal-Mapping#:~:text=Advanced%2DLighting%2FNormal%2DMapping
     public updateTangentBuffers(mesh: gfx.Mesh): void
     {
@@ -281,5 +274,17 @@ export class NormalMapMaterial extends gfx.Material3
         });
         this.gl.bindBuffer(this.gl.ARRAY_BUFFER, tangentBuffer);
         this.gl.bufferData(this.gl.ARRAY_BUFFER, new Float32Array(tangentArray), this.gl.STATIC_DRAW);
+    }
+
+    setColor(color: gfx.Color): void
+    {
+        this.ambientColor.copy(color);
+        this.diffuseColor.copy(color);
+        this.specularColor.copy(color);
+    }
+
+    getColor(): gfx.Color
+    {
+        return this.diffuseColor;
     }
 }

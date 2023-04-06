@@ -116,4 +116,9 @@ export class OutlineMaterial extends gfx.Material3
     {
         this.color.copy(color);
     }
+
+    getColor(): gfx.Color
+    {
+        return this.color;
+    }
 }

@@ -192,4 +192,9 @@ export class ToonMaterial extends gfx.Material3
         this.diffuseColor.copy(color);
         this.specularColor.copy(color);
     }
+
+    getColor(): gfx.Color
+    {
+        return this.diffuseColor;
+    }
 }
